@@ -1,0 +1,36 @@
+{
+  "files": {
+    "asset/main.js": [
+      {
+        "id": "b5bbb417-7ed9-4727-b5cb-c3279acbc7b9",
+        "line": 1,
+        "version": 1,
+        "index": 0
+      }
+    ],
+    "html/private.html": [
+      {
+        "id": "642d06ff-3bb9-45b6-bfaf-b4ed1c90d06a",
+        "line": 6,
+        "version": 99,
+        "index": 47
+      }
+    ],
+    "js/recorder.js": [
+      {
+        "id": "fc87b11c-32e9-4608-b639-299f6543e8c3",
+        "line": 1,
+        "version": 1,
+        "index": 0
+      }
+    ],
+    "movie/save.js": [
+      {
+        "id": "ae306aa7-bf8a-41d3-bbdb-419c30e2bbaa",
+        "line": 1,
+        "version": 1,
+        "index": 0
+      }
+    ]
+  }
+}

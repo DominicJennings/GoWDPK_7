@@ -1,0 +1,25 @@
+{
+	"assets": [
+		{
+			"title": "fdf.png",
+			"type": "prop",
+			"subtype": "0",
+			"ext": "png",
+			"share": {
+				"type": "none"
+			},
+			"published": 0,
+			"tags": "",
+			"id": "a-4.png",
+			"file": "a-4.png",
+			"enc_asset_id": "a-4"
+		}
+	],
+	"movies": [],
+	"settings": {
+		"wixwatermark": "off",
+		"chars": "off",
+		"darkmode": "on",
+		"oneyearbacklvm": "off"
+	}
+}

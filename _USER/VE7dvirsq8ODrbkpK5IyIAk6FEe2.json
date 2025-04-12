@@ -1,0 +1,50 @@
+{
+	"assets": [
+		{
+			"id": "c-3",
+			"enc_asset_id": "c-3",
+			"type": "char",
+			"themeId": "family",
+			"title": "Untitled",
+			"tags": "",
+			"subtype": 0,
+			"share": {
+				"type": "none"
+			}
+		},
+		{
+			"id": "c-2",
+			"enc_asset_id": "c-2",
+			"type": "char",
+			"themeId": "family",
+			"title": "Untitled",
+			"tags": "",
+			"subtype": 0,
+			"share": {
+				"type": "none"
+			}
+		}
+	],
+	"movies": [
+		{
+			"movieOwnerId": "VE7dvirsq8ODrbkpK5IyIAk6FEe2",
+			"movieOwner": "Luis Strublic",
+			"date": "2023-06-10T23:11:20.431Z",
+			"durationString": "00:35",
+			"duration": 35,
+			"title": "ofhjkqwrguirwt78946w47956w478956234789563478956349",
+			"desc": "",
+			"tags": "",
+			"id": "m-1",
+			"themeId": "ugc",
+			"public": 1,
+			"private": 0
+		}
+	],
+	"settings": {
+		"wixwatermark": "off",
+		"chars": "off",
+		"darkmode": "on",
+                "oneyearbacklvm": "off"
+	}
+}

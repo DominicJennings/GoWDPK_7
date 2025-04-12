@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en" id="darkModeChange1" style="background-color: black; color: white">
+<head>
+	<meta charset="UTF-8">
+	<title>Settings</title>
+	<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+                @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap");
+                body {
+                        background: #f9f9f9;
+                        font-family: "Roboto", sans-serif;
+                }
+
+                .shadow {
+                        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1) !important;
+                }
+
+                .profile-tab-nav {
+                        min-width: 250px;
+                }
+
+                .tab-content {
+                        flex: 1;
+                }
+
+                .form-group {
+                        margin-bottom: 1.5rem;
+                }
+
+                .nav-pills a.nav-link {
+                        padding: 15px 20px;
+                        border-bottom: 1px solid #ddd;
+                        border-radius: 0;
+                        color: #333;
+                }
+                .nav-pills a.nav-link i {
+                        width: 20px;
+                }
+
+                .img-circle img {
+                        height: 100px;
+                        width: 100px;
+                        border-radius: 100%;
+                        border: 5px solid #fff;
+                }
+                #studio-button {
+                        background-color: orange; 
+                        color: white;
+                }
+                #studio-button:hover,
+                #studio-button:focus {
+                        background-color: yellow; 
+                        color: black; 
+                        cursor: pointer;
+                }
+                #char-button {
+                        background-color: gray; 
+                        color: white;
+                }
+                #char-button:hover,
+                #char-button:focus {
+                        background-color: lightgray; 
+                        color: black; 
+                        cursor: pointer;
+                }
+                iframe {
+                        border: 0;
+                }
+                .error-message {
+                        color: red;
+                }
+                .loading {
+                        display: none;
+                }
+        </style>
+</head>
+<body id="darkModeChange4" style="background-color: black; color: white">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand" href="/"><img src="./logo.png"/></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                                <li class="nav-item active">
+                                        <a class="nav-link" href="/">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                        <a class="nav-link" href="https://discord.gg/zVcQZrPVZ3">Discord Server</a>
+                                </li>
+                                <li class="nav-item dropdown" id="logged-in" style="display: none;">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" 
+                                                aria-haspopup="true" aria-expanded="false">
+                                                Your Account
+                                        </a>
+                                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                <a class="dropdown-item" href="/html/list_private.html">Your Videos</a>
+                                                <a class="dropdown-item" href="/html/points.html">Your Points</a>
+                                                <div class="dropdown-divider"></div>
+                                                <a class="dropdown-item" href="/html/settings.html">
+                                                        Settings 
+                                                        <span class="sr-only">
+                                                                (current)
+                                                        </span>
+                                                </a>
+                                        </div>
+                                </li>
+                                <li class="nav-item">
+                                        <a class="nav-link" id="google-login"><img height="14" width="14" src="./google_icon.png"/> Login</a>
+                                </li>
+                        </ul>
+                        <div class="form-inline my-2 my-lg-0" id="buttons" style="display: none">
+                                <button type="button" class="btn" id="char-button" data-toggle="modal" data-target="#exampleModal">
+                                        Create a Character
+                                </button>
+                                <button type="button" class="btn" id="studio-button" data-toggle="modal" data-target="#exampleModal">
+                                        Make a Video
+                                </button>
+                        </div>
+                </div>
+        </nav>
+        <div class="modal bd-example-modal-lg" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                        <div class="modal-content" id="darkModeChange5" style="background-color: black; color: white">
+                                <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel"></h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close" id="darkModeChange6" style="color: white">
+                                                <span aria-hidden="true">&times;</span>
+                                        </button>
+                                </div>
+                                <center class="error-message"></center>
+                                <div class="modal-body" id="modalContent"></div>
+                                <div class="modal-footer">
+                                        <button type="button" class="btn btn-primary" id="back-to-editing" style="display: none">Back to editing</button>
+                                        <button type="button" class="btn btn-secondary" id="gonow-button" style="display: none">Ok</button>
+                                </div>
+                        </div>
+                </div>
+        </div>
+	<section class="py-5 my-5" id="darkModeChange2" style="background-color: black; color: white">
+		<div class="container">
+			<h1 class="mb-5">Settings</h1>
+			<div class="bg-black shadow rounded-lg d-block d-sm-flex" id="darkModeChange3" style="background-color: black; color: white">
+				<div class="profile-tab-nav border-right">
+					<div class="p-4">
+                                                <h4>Account Info</h4>
+						<div class="img-circle text-center mb-3">
+							Profile Picture: <img id="profileImage" alt="Image" class="shadow">
+						</div>
+						<h4 class="text-center" id="account-name"></h4>
+					</div>
+				</div>
+				<div class="tab-content p-4 p-md-5" id="v-pills-tabContent">
+					<form class="tab-pane fade show active" id="lvm" role="tabpanel" aria-labelledby="password-tab" action="/ajax/lvmSettings/update" method="post">
+                                                <input type="hidden" name="uid" class="user-id"/>
+                                                <input type="hidden" name="pathname" class="pathname"/>
+						<div class="row">
+							<div class="col-md-6">
+								<div class="form-group">
+								  	<label>Dark Mode</label>
+                                                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" onclick="fillModal('A Feature that allows you to see the whole entire webpage including the LVM in dark mode. I, JosephAnimate, highly recommend that you leave this on to help you not get so much headaches from the light your brain is getting. if you don\'t believe me, that\'s fine. just get a headache then, i don\'t care and i am not responsible for the headache you substained from not reading this message.')">More Info</button><br>
+								  	<select name="darkmode" id="darkmode">
+                                                                                <option value="on">On</option>
+                                                                                <option value="off">Off</option>
+                                                                        </select>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6">
+								<div class="form-group">
+								  	<label>Public Characters</label>
+                                                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" onclick="fillModal('A feature that allows you to make all of your characters public allowing all of the guest users to use your characters in their videos if they wanted to. If you do not grant anyone permission to use your characters in their videos, then we suggest leaving this off as this is turned off by default.')">More Info</button><br>
+								  	<select name="chars" id="chars">
+                                                                                <option value="on">On</option>
+                                                                                <option value="off">Off</option>
+                                                                        </select>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="form-group">
+								  	<label>Wix Watermark</label>
+                                                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" onclick="fillModal('A feature that allows the video player to display the GoAnimate wix watermark as if you were using GoAnimate wix.')">More Info</button><br>
+								  	<select name="wixwatermark" id="wixwatermark">
+                                                                                <option value="on">On</option>
+                                                                                <option value="off">Off</option>
+                                                                        </select>
+								</div>
+							</div>
+                                                        <div class="col-md-6">
+								<div class="form-group">
+								  	<label>2015 LVM</label>
+                                                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" onclick="fillModal('If you wanted to know what the LVM looked like back in 2015, then this feature is for you. If you want to try out this feature, then go ahead and do it.')">More Info</button><br>
+								  	<select name="oneyearbacklvm" id="oneyearbacklvm">
+                                                                                <option value="on">On</option>
+                                                                                <option value="off">Off</option>
+                                                                        </select>
+								</div>
+							</div>
+						</div>
+						<div>
+							<button class="btn btn-primary">Update</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+	<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.js"></script>
+        <script>
+                let userData;
+                let settingsData;
+                class UserSettings {
+                        constructor(title, content, extras) {
+                                this.title = title;
+                                this.htmlContent = content;
+                                this.footerContent = extras;
+                                if (userData.notLoggedIn) window.location.href = window.location.origin;
+                                else {
+                                        document.getElementById('account-name').innerHTML = 'Name: ' + userData.displayName;
+                                        for (const element of document.getElementsByClassName('user-id')) 
+                                                element.value = userData.uid;
+                                        for (const element of document.getElementsByClassName('pathname')) 
+                                                element.value = window.location.pathname;
+                                        document.getElementById('profileImage').src = userData.photoURL;
+                                }
+                        }
+                        showModal() {
+                                if (info.id == "studio" || info.id == "char_creator") {
+                                        $("#back-to-editing").hide();
+                                        $("#darkModeChange6").show();
+                                        $("#exampleModalLabel").html(this.title || this.footerContent);
+                                        $("#modalContent").html(this.htmlContent + `<object style="display:none" id="preview_player" 
+                                        data="https://josephanimate2021.github.io/animation/414827163ad4eb60/player.swf" type="application/x-shockwave-flash"
+					width="778" height="360">
+					<param name="flashvars" />
+					<param name="allowScriptAccess" value="always" />
+					<param name="allowFullScreen" value="true" />
+                                        <param name="bgcolor" value="${settingsData ? settingsData.darkmode == "on" ? "#000000" : "#FFFFFF" : "#000000"}" /></object><iframe style="display: none" id="importer-frame" width="778" height="360"></iframe><center class="loading"></center>`);
+                                } else {
+                                        $("#exampleModalLabel").html(this.title);
+                                        $("#modalContent").html(this.htmlContent);
+                                }
+                        }
+                }
+                document.getElementById('back-to-editing').onclick = () => {
+                        $(".loading").hide();
+                        clearImporterErrorMessage();
+                        $("#importer-frame").hide();
+                        info.isImportingAsset = false;
+                        info.id = "studio";
+                        $("#preview_player").hide();
+                        $("#exampleModalLabel").html('Create a Video');
+                        enterFullScreen();
+                        $("#back-to-editing").hide();
+                }
+                function clearImporterErrorMessage() {
+                        $(".error-message").css("color", "red").html('');
+                }
+                function importFailed(msg, importerShown = false) {
+                        if (!importerShown) showImporter();
+                        $(".error-message").html(msg);
+                }
+                function fillModal(content) {
+                        $("#exampleModalLabel").html('');
+                        $("#modalContent").html(content);
+                }
+                function showModal(title, content, extras) {
+                        const userSettings = new UserSettings(title, content, extras);
+                        userSettings.showModal();
+                        if (info.id == "char_creator") enterFullScreen();
+                }
+                function toAttrString(table) {
+                        return typeof table == "object" ? Object.keys(table).filter((key) => table[key] !== null).map((key) => `${encodeURIComponent(key)}=${
+                                encodeURIComponent(table[key])
+                        }`).join("&") : table.replace(/"/g, '\\"');
+                }
+                function toParamString(table) {
+                        return Object.keys(table).map((key) => `<param name="${key}" value="${toAttrString(table[key])}">`).join(" ");
+                }
+                function quitStudio() {
+                        closeFullscreen();
+                }
+                function importStarted(data, filename) {
+                        $("#back-to-editing").hide();
+                        $("#importer-frame").hide();
+                        $("#exampleModalLabel").html('Importing Your Asset...');
+                        $(".loading").html(`<img src="/html/loading.gif"/>`).show();
+                        let b = new FormData();
+                        b.append("import", data.file);
+                        b.append("name", filename);
+                        b.append("type", data.type);
+                        b.append("subtype", data.subtype);
+                        b.append("ptype", data.ptype || "");
+                        b.append("userId", userData.uid);
+                        $.ajax({
+                                url: "/ajax/uploadAsset",
+                                method: "POST",
+                                data: b,
+                                processData: false,
+                                contentType: false,
+                                dataType: "json"
+                        }).done(d => {
+                                if (d.status == "ok") {
+                                        setTimeout(() => {
+                                                $("#back-to-editing").show();
+                                                $("#exampleModalLabel").html('Success!');
+                                                $(".loading").html(`<img src="/html/checkmark.jpg"/>`).show();
+                                        }, 500);
+                                        $("#obj")[0].importerStatus("done");
+                                        $("#obj")[0].importerUploadComplete(d.data.type, d.data.file, d.data);
+                                        $("#obj")[0].openYourLibrary();
+                                        setTimeout(() => $(".error-message").css("color", "green").html("You may now return to fullscreen if you like.").show(), 2500)
+                                } else importFailed(d.msg);
+                        }).catch(e => importFailed(e));
+                }
+                function toObjectString(attrs, params) {
+                        params.flashvars.nextUrl = "javascript:closeFullscreen();"
+                        if (info.id == "studio") {
+                                attrs.data = settingsData.darkmode != "off" ? "https://josephanimate2021.github.io/animation/414827163ad4eb60-revision/go_full.swf" : "https://josephanimate2021.github.io/animation/414827163ad4eb60/go_full.swf";
+                                params.movie = settingsData.darkmode != "off" ? "https://josephanimate2021.github.io/animation/414827163ad4eb60-revision/go_full.swf" : "https://josephanimate2021.github.io/animation/414827163ad4eb60/go_full.swf";
+                                params.flashvars.clientThemePath = "https://josephanimate2021.github.io/static/ad44370a650793d9/<client_theme>";
+                                enterFullScreen();
+                        }
+                        return `<object id="obj" ${
+                                Object.keys(attrs).map((key) => `${key}="${attrs[key].replace(/"/g, '\\"')}"`).join(" ")
+                        }>${toParamString(params)}</object>`;
+                }
+                let attrs = {};
+                let params = {
+                        flashvars: {}
+                };
+                let info = {};
+                const permissions = (new URLSearchParams(window.location.search));
+                const interactiveTutorial = {
+                        needToShow: function() {
+                                return permissions.tutorial ? true : false
+                        },
+                        neverDisplay: function() {
+                                return !permissions.tutorial ? true : false
+                        }
+                };
+                function launchFullScreen(element) {
+                        if (element.requestFullScreen) {
+                                element.requestFullScreen();
+                                return true;
+                        } else if (element.mozRequestFullScreen) {
+                                element.mozRequestFullScreen();
+                                return true;
+                        } else if (element.webkitRequestFullScreen) {
+                                element.webkitRequestFullScreen();
+                                return true;
+                        } else if (element.msRequestFullscreen) { 
+                                element.msRequestFullscreen();
+                        } else return false;
+                }
+                function enterFullScreen() {
+                        setTimeout(() => {
+                                const elem = $("#obj");
+                                elem.css("height", screen.height);
+                                elem.css("width", screen.width);
+                                launchFullScreen(document.getElementById("obj"))
+                        }, 1);
+                }
+                document.addEventListener('fullscreenchange', fullScreenExitHandler);
+                document.addEventListener('webkitfullscreenchange', fullScreenExitHandler);
+                document.addEventListener('mozfullscreenchange', fullScreenExitHandler);
+                document.addEventListener('MSFullscreenChange', fullScreenExitHandler);
+                function fullScreenExitHandler() {
+                        if (
+                                !document.fullscreenElement 
+                                && !document.webkitIsFullScreen 
+                                && !document.mozFullScreen 
+                                && !document.msFullscreenElement
+                        ) {
+                                if (info.id != "previewPlayer" && !info.isImportingAsset) $('.modal').modal('hide');
+                        }
+                } 
+                function characterSaved() {
+                        closeFullscreen();
+                }
+                function exitStudio() {
+                        closeFullscreen();
+                }
+                let movieDataXmlStr = null;
+                function initPreviewPlayer(dataXmlStr, startFrame) {
+                        info.id = "previewPlayer";
+                        closeFullscreen();
+                        movieDataXmlStr = dataXmlStr;
+                        filmXmlStr = dataXmlStr.split("<filmxml>")[1].split("</filmxml>")[0];
+                        const flashvars = new URLSearchParams({
+                                apiserver: "/",
+                                storePath: "https://josephanimate2021.github.io/store/3a981f5cb2739137/<store>",
+                                ut: 20,
+                                startFrame,
+                                autostart: 1,
+                                isInitFromExternal: 1,
+                                isWide: 0,
+                                clientThemePath: "https://josephanimate2021.github.io/static/ad44370a650793d9/<client_theme>",
+                        }).toString();
+                        $("#obj").css("height", "0px");
+                        $("#modalContent").find("object param[name='flashvars']").attr("value", flashvars);
+                        $("#darkModeChange6").hide();
+                        $("#exampleModalLabel").html('Preview Video');
+                        $("#back-to-editing").show();
+                        $("#preview_player").show();
+                }
+                function showImporter() {
+                        info.isImportingAsset = true;
+                        closeFullscreen();
+                        $("#obj").css("height", "0px");
+                        $("#darkModeChange6").hide();
+                        $("#exampleModalLabel").html('Error');
+                        $("#back-to-editing").show();
+                        $("#loading")
+                                .html('The importer could not be loaded due to the studio not being able to take javascript requests. we will find a way to fix this soon. it could be a long while.')
+                        .show();
+                }
+                function retrievePreviewPlayerData() { 
+                        return movieDataXmlStr 
+                }
+                function closeFullscreen() {
+                        if (document.exitFullscreen) document.exitFullscreen();
+                        else if (document.webkitExitFullscreen) document.webkitExitFullscreen();
+                        else if (document.msExitFullscreen) document.msExitFullscreen();
+                        else if (document.mozExitFullscreen) document.mozExitFullscreen();
+                }
+        </script>
+        <script type="module" src="https://ourmetallicdisplaymanager.joseph-animate.repl.co/static/js/fireanimate.js"></script>
+</body>
+</html>

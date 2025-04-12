@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html class="dark">
+	<head>
+		<meta charset="UTF-8"/>
+		<link rel="icon" href="/favicon.ico" type="image/png" />
+		<title>Import An Asset</title>
+		<meta name="description" content="Wrapper: Offline's settings"/>
+		<link rel="stylesheet" type="text/css" href="https://ourmetallicdisplaymanager.joseph-animate.repl.co/static/css/global.css"/>
+		<link rel="stylesheet" type="text/css" href="https://ourmetallicdisplaymanager.joseph-animate.repl.co/static/css/importer.css"/>
+		<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+		<script src="https://ourmetallicdisplaymanager.joseph-animate.repl.co/static/js/global.js"></script>
+	</head>
+	<body>
+                <center>
+                        <h2>
+                                Note: 
+                                <br>Because you are using the importer in a window, 
+                                <br>you won't be able to upload more than 1 file due to the design and functions of this importer.
+                        </h2>
+                </center>
+		<main>			
+			<nav class="tabs_contain">
+				<nav class="tab" style="display:block">
+					<nav id="importer">
+                                                <center>
+                                                        <button id="import-toggle" onclick="document.getElementById('importer-files').click()">Upload A File</button>
+							<form>
+								<input id="importer-files" type="file" name="file" title="Upload Files" accept=".mp3,.wav,.ogg,.wma,.swf,.gif,.png,.jpg" />
+							</form>
+                                                </center>
+						<div id="importer-queue"></div>
+					</nav>
+				</nav>
+			</nav>
+		</main>
+	</body>
+	<script src="./importer.js"></script>
+	<script src="https://ourmetallicdisplaymanager.joseph-animate.repl.co/static/js/filesize.js"></script>
+	<script>new AssetImporter(importer)</script>
+</html>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list version="1.0">
+	<fvm_meta theme_code="" is_biz="0" />
+	<theme id="custom" name="Comedy World" cc_theme_id="family" enable="N" />
+	<theme id="action" name="Lil' Peepz" cc_theme_id="cc2" enable="N" />
+        <theme id="retro" name="Cartoon Classics" enable="N" />
+        <theme id="anime" name="Anime" cc_theme_id="anime" enable="N" />
+        <theme id="ninjaanime" name="Ninja Anime" cc_theme_id="ninjaanime" enable="N" />
+        <theme id="chibi" name="Chibi Peepz" cc_theme_id="chibi" enable="N" />
+        <theme id="ninja" name="Chibi Ninjas" cc_theme_id="ninja" enable="N" />
+        <theme id="space" name="Space Peepz" enable="N" />
+        <theme id="stick" name="Stick Figure" enable="N" />
+        <theme id="animal" name="Lil' Petz World" enable="N" />
+        <theme id="common" name="Common" enable="N" />
+        <word></word>
+	<whiteword />
+	<excludeAssetIDs />
+	<points money="0" sharing="0" />
+</list>

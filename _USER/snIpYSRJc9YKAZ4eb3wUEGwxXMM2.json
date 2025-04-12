@@ -1,0 +1,154 @@
+{
+	"assets": [
+		{
+			"duration": 2037.9999999999998,
+			"title": "[Justin] Use Goanimate BurnHog Editon",
+			"share": {
+				"type": "none"
+			},
+			"ext": "mp3",
+			"type": "sound",
+			"subtype": "tts",
+			"downloadtype": "progressive",
+			"published": 0,
+			"tags": "",
+			"id": "a-27.mp3",
+			"file": "a-27.mp3",
+			"enc_asset_id": "a-27"
+		},
+		{
+			"duration": 2142,
+			"title": "[Justin] If  You Tired To Make Goanimate Video",
+			"share": {
+				"type": "none"
+			},
+			"ext": "mp3",
+			"type": "sound",
+			"subtype": "tts",
+			"downloadtype": "progressive",
+			"published": 0,
+			"tags": "",
+			"id": "a-26.mp3",
+			"file": "a-26.mp3",
+			"enc_asset_id": "a-26"
+		},
+		{
+			"duration": 2220,
+			"title": "[Justin] Hi Guys It's Me Goanimate Boris",
+			"share": {
+				"type": "none"
+			},
+			"ext": "mp3",
+			"type": "sound",
+			"subtype": "tts",
+			"downloadtype": "progressive",
+			"published": 0,
+			"tags": "",
+			"id": "a-25.mp3",
+			"file": "a-25.mp3",
+			"enc_asset_id": "a-25"
+		},
+		{
+			"duration": 2377,
+			"title": "[Joey] Hi Guys It's Me Goanimate Boris",
+			"share": {
+				"type": "none"
+			},
+			"ext": "mp3",
+			"type": "sound",
+			"subtype": "tts",
+			"downloadtype": "progressive",
+			"published": 0,
+			"tags": "",
+			"id": "a-24.mp3",
+			"file": "a-24.mp3",
+			"enc_asset_id": "a-24"
+		},
+		{
+			"duration": 862,
+			"title": "[Justin] Hi Guys",
+			"share": {
+				"type": "none"
+			},
+			"ext": "mp3",
+			"type": "sound",
+			"subtype": "tts",
+			"downloadtype": "progressive",
+			"published": 0,
+			"tags": "",
+			"id": "a-23.mp3",
+			"file": "a-23.mp3",
+			"enc_asset_id": "a-23"
+		},
+		{
+			"duration": 862,
+			"title": "[Justin] Hi Guys",
+			"share": {
+				"type": "none"
+			},
+			"ext": "mp3",
+			"type": "sound",
+			"subtype": "tts",
+			"downloadtype": "progressive",
+			"published": 0,
+			"tags": "",
+			"id": "a-22.mp3",
+			"file": "a-22.mp3",
+			"enc_asset_id": "a-22"
+		},
+		{
+			"duration": 679,
+			"title": "[Justin] Test",
+			"share": {
+				"type": "none"
+			},
+			"ext": "mp3",
+			"type": "sound",
+			"subtype": "tts",
+			"downloadtype": "progressive",
+			"published": 0,
+			"tags": "",
+			"id": "a-21.mp3",
+			"file": "a-21.mp3",
+			"enc_asset_id": "a-21"
+		},
+		{
+			"id": "c-17",
+			"enc_asset_id": "c-17",
+			"type": "char",
+			"themeId": "family",
+			"title": "Untitled",
+			"tags": "",
+			"subtype": 0,
+			"share": {
+				"type": "none"
+			}
+		}
+	],
+	"movies": [
+		{
+			"movieOwnerId": "snIpYSRJc9YKAZ4eb3wUEGwxXMM2",
+			"movieOwner": "Gerald Shakara",
+			"date": "2023-07-08T00:48:23.674Z",
+			"durationString": "00:12",
+			"duration": 12.9,
+			"title": "Untitled Video",
+			"desc": "",
+			"tags": "",
+			"id": "m-33",
+			"themeId": "ugc",
+			"public": 0,
+			"private": 0,
+			"type": "movie",
+			"subtype": 0,
+			"enc_asset_id": "m-33",
+			"file": "m-33.xml"
+		}
+	],
+	"settings": {
+		"wixwatermark": "off",
+		"chars": "off",
+		"darkmode": "on",
+		"oneyearbacklvm": "off"
+	}
+}

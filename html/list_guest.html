@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html id="darkModeChange1" style="background-color: black; color: white;">
+        <head>
+                <title>Videos Made By Anonymous Users</title>
+                <link rel="stylesheet" href="https://ourmetallicdisplaymanager.joseph-animate.repl.co/static/css/page.css" type="text/css"/>
+        </head>
+        <body>
+                <div class="modal" id="modal">
+                        <div class="modal-content">
+                                <div class="modal-header">
+                                        <span class="close" id="close">&times;</span>
+                                        <h2 id="modal-title"></h2>
+                                </div>
+                                <p class="error-message"></p>
+                                <div class="modal-body"></div>
+                                <div class="tutorial-body" style="display: none">
+                                        <div id="wistia_player"></div>
+                                </div>
+                                <div class="modal-footer">
+                                        <div id="previewer-buttons" style="display: none">
+                                                <button class="back-to-editing">Back to editing</button>
+                                                <button class="save-now-button">Save now</button>
+                                        </div>
+                                        <div id="tutorial-buttons" style="display: none">
+                                                <button class="close-button">Close</button>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+                <header>
+                        <a href="/"><img src="./logo.png"/></a>
+                        <button class="default-button login-button" style="display: none;" id="google-login">
+                                <img id="icon" src="./google_icon.png"/> Login
+                        </button>
+                        <div id="logged-in" style="display: none" class="dropdown">
+                                <button class="dropbtn">Your Account &#9660;</button>
+                                <div class="dropdown-content">
+                                        <a href="/html/list_private.html">Your Videos</a>
+                                        <a href="/html/points.html">Your Points</a>
+                                        <a href="/html/settings.html">Settings</a>
+                                        <a style="display: none; color: red; cursor: pointer" id="logout-button">Logout</a>
+                                </div>
+                        </div>
+                        <div id="buttons">
+                                <button class="default-button" id="char-button">Create a Character</button>
+                                <button class="actualButton" id="studio-button">Make a Video</button>
+                        </div>
+                </header>
+                <h1>Videos Made By Anonymous Users</h1>
+                <p>If you are logged into your google account, then you will be redirected to your own private video list.</p>
+                <div class="feedback"></div>
+                <div class="warning-message">
+                        <p>Reviving GoWDPK is currently in progress right now. please be patient as time goes on.</p>
+                </div>
+                <div class="grid-container"></div>
+                <div style="position: relative; width: 600px; height: 400px;">    
+                        <div style="position: absolute; bottom: 5px;">
+                                © <span id="year"></span> Copyright: The GoWDPK Development Team
+                        </div>
+                </div>
+        </body>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script>
+                const date = new Date();
+                $("#year").html(date.getFullYear());
+                let userData, settingsData, origTitle, allData;
+                let info = {};
+                $.post("/ajax/database/get").done(m => {
+                        allData = JSON.parse(m).movies;
+                        const tbl = allData.filter(i => i.public == "0");
+                        $(".grid-container").html(tbl.map(v => `
+                        <a id="${v.id}" onclick="loadPlayer('${v.id}')">
+                                <div class="grid-item">${v.title}<br><img src="/ajax/movie/thumb/${v.id}.png"/><br>${v.desc}<br>By: Anonymous User</div>
+                        </a>`).join("") || "<div class='novideos'>No Videos</div>");
+                })
+                function refreshVideoList() {
+                        $.post("/ajax/database/get").done(m => {
+                                allData = JSON.parse(m).movies;
+                                const tbl = allData.filter(i => i.public == "0");
+                                $(".grid-container").html(tbl.map(v => `
+                                <a id="${v.id}" onclick="loadPlayer('${v.id}')">
+                                        <div class="grid-item">${v.title}<br><img src="/ajax/movie/thumb/${v.id}.png"/><br>${v.desc}<br>By: Anonymous User</div>
+                                </a>`).join("") || "<div class='novideos'>No Videos</div>");
+                        });
+                }
+        </script>
+        <script src="https://ourmetallicdisplaymanager.joseph-animate.repl.co/static/js/studio.js"></script>
+        <script charset="ISO-8859-1" src="https://fast.wistia.com/assets/external/E-v1.js" async=""></script>
+        <script type="module" src="https://ourmetallicdisplaymanager.joseph-animate.repl.co/static/js/fireanimate.js"></script>
+</html>

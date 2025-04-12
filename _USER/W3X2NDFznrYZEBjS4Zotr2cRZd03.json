@@ -1,0 +1,212 @@
+{
+	"assets": [
+		{
+			"title": "hello_im_boris_th_214.mp3",
+			"type": "sound",
+			"subtype": "voiceover",
+			"ext": "mp3",
+			"share": {
+				"type": "none"
+			},
+			"published": 0,
+			"tags": "",
+			"downloadtype": "progressive",
+			"duration": 4545,
+			"id": "a-15.mp3",
+			"file": "a-15.mp3",
+			"enc_asset_id": "a-15"
+		},
+		{
+			"title": "LOGO esencia sci",
+			"type": "prop",
+			"subtype": "0",
+			"ext": "LOGO esencia sci",
+			"share": {
+				"type": "none"
+			},
+			"published": 0,
+			"tags": "",
+			"id": "a-0.LOGO esencia sci",
+			"file": "a-0.LOGO esencia sci",
+			"enc_asset_id": "a-0"
+		},
+		{
+			"id": "c-16",
+			"enc_asset_id": "c-16",
+			"type": "char",
+			"themeId": "family",
+			"title": "Untitled",
+			"tags": "",
+			"subtype": 0,
+			"share": {
+				"type": "none"
+			}
+		},
+		{
+			"id": "c-15",
+			"enc_asset_id": "c-15",
+			"type": "char",
+			"themeId": "family",
+			"title": "Untitled",
+			"tags": "",
+			"subtype": 0,
+			"share": {
+				"type": "none"
+			}
+		},
+		{
+			"id": "c-10",
+			"enc_asset_id": "c-10",
+			"type": "char",
+			"themeId": "family",
+			"title": "Untitled",
+			"tags": "",
+			"subtype": 0,
+			"share": {
+				"type": "none"
+			}
+		},
+		{
+			"duration": 6713,
+			"title": "[Daniel] Hello! This is the test of Go W D P K's version of Joseph Animate 2021",
+			"share": {
+				"type": "none"
+			},
+			"ext": "mp3",
+			"type": "sound",
+			"subtype": "tts",
+			"downloadtype": "progressive",
+			"published": 0,
+			"tags": "",
+			"id": "a-13.mp3",
+			"file": "a-13.mp3",
+			"enc_asset_id": "a-13"
+		},
+		{
+			"duration": 6426,
+			"title": "[Daniel] Hello! This is the test of GoW D P K's version of Joseph Animate 2021",
+			"share": {
+				"type": "none"
+			},
+			"ext": "mp3",
+			"type": "sound",
+			"subtype": "tts",
+			"downloadtype": "progressive",
+			"published": 0,
+			"tags": "",
+			"id": "a-12.mp3",
+			"file": "a-12.mp3",
+			"enc_asset_id": "a-12"
+		},
+		{
+			"duration": 6426,
+			"title": "[Daniel] Hello! This is the test of GoWDPK! Made by josephanimate2021!",
+			"share": {
+				"type": "none"
+			},
+			"ext": "mp3",
+			"type": "sound",
+			"subtype": "tts",
+			"downloadtype": "progressive",
+			"published": 0,
+			"tags": "",
+			"id": "a-11.mp3",
+			"file": "a-11.mp3",
+			"enc_asset_id": "a-11"
+		},
+		{
+			"id": "c-4",
+			"enc_asset_id": "c-4",
+			"type": "char",
+			"themeId": "family",
+			"title": "Untitled",
+			"tags": "",
+			"subtype": 0,
+			"share": {
+				"type": "none"
+			}
+		}
+	],
+	"movies": [
+		{
+			"movieOwnerId": "W3X2NDFznrYZEBjS4Zotr2cRZd03",
+			"movieOwner": "LCJ",
+			"date": "2023-06-17T12:21:03.584Z",
+			"durationString": "00:02",
+			"duration": 2.5,
+			"title": "Untitled Video",
+			"desc": "",
+			"tags": "",
+			"id": "m-29",
+			"themeId": "ugc",
+			"public": 0,
+			"private": 0,
+			"type": "movie",
+			"subtype": 0,
+			"enc_asset_id": "m-29",
+			"file": "m-29.xml"
+		},
+		{
+			"movieOwnerId": "W3X2NDFznrYZEBjS4Zotr2cRZd03",
+			"movieOwner": "LCJ",
+			"date": "2023-06-14T14:07:36.263Z",
+			"durationString": "00:02",
+			"duration": 2.9,
+			"title": "",
+			"desc": "",
+			"tags": "",
+			"id": "m-12",
+			"themeId": "ugc",
+			"public": 0,
+			"private": 0
+		},
+		{
+			"movieOwnerId": "W3X2NDFznrYZEBjS4Zotr2cRZd03",
+			"movieOwner": "LCJ",
+			"date": "2023-06-14T05:14:41.761Z",
+			"durationString": "00:02",
+			"duration": 2.5,
+			"title": "",
+			"desc": "",
+			"tags": "",
+			"id": "m-11",
+			"themeId": "ugc",
+			"public": 0,
+			"private": 0
+		},
+		{
+			"movieOwnerId": "W3X2NDFznrYZEBjS4Zotr2cRZd03",
+			"movieOwner": "LCJ",
+			"date": "2023-06-13T17:35:21.239Z",
+			"durationString": "00:02",
+			"duration": 2.5,
+			"title": "",
+			"desc": "",
+			"tags": "",
+			"id": "m-10",
+			"themeId": "ugc",
+			"public": 0,
+			"private": 0
+		},
+		{
+			"movieOwnerId": "W3X2NDFznrYZEBjS4Zotr2cRZd03",
+			"movieOwner": "LCJ",
+			"date": "2023-06-13T17:21:18.324Z",
+			"durationString": "00:06",
+			"duration": 6.8,
+			"title": "test",
+			"desc": "",
+			"tags": "",
+			"id": "m-9",
+			"themeId": "ugc",
+			"public": 1,
+			"private": 0
+		}
+	],
+	"settings": {
+		"wixwatermark": "on",
+		"chars": "on",
+		"darkmode": "on",
+		"oneyearbacklvm": "off"
+	}
+}

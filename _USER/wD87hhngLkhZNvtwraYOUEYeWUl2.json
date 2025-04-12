@@ -1,0 +1,42 @@
+{
+	"assets": [
+		{
+			"id": "c-5",
+			"enc_asset_id": "c-5",
+			"type": "char",
+			"themeId": "family",
+			"title": "Untitled",
+			"tags": "",
+			"subtype": 0,
+			"share": {
+				"type": "none"
+			}
+		}
+	],
+	"movies": [
+		{
+			"movieOwnerId": "wD87hhngLkhZNvtwraYOUEYeWUl2",
+			"movieOwner": "Itinerary Jyvee",
+			"date": "2023-06-16T17:11:00.190Z",
+			"durationString": "00:02",
+			"duration": 2.5,
+			"title": "Untitled Video",
+			"desc": "",
+			"tags": "",
+			"id": "m-19",
+			"themeId": "ugc",
+			"public": 0,
+			"private": 0,
+			"type": "movie",
+			"subtype": 0,
+			"enc_asset_id": "m-19",
+			"file": "m-19.xml"
+		}
+	],
+	"settings": {
+		"wixwatermark": "off",
+		"chars": "off",
+		"darkmode": "off",
+                "oneyearbacklvm": "off"
+	}
+}

@@ -1,0 +1,44 @@
+{
+  "name": "grounded",
+  "version": "1.2.7",
+  "versionStr": "1.2.7⅘",
+  "scripts": {
+    "start": "node main.js"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "@octanuary/httpz": "github:octanuary/httpz",
+    "@replit/database": "^2.0.2",
+    "@replit/repl-auth": "^1.0.0",
+    "bcrypt": "^5.1.0",
+    "brotli": "1.3.2",
+    "censored": "^0.0.2",
+    "express": "^4.18.2",
+    "express-openid-connect": "^2.11.0",
+    "forever": "^4.0.3",
+    "formidable": "^2.0.1",
+    "jquery": "^3.6.3",
+    "js-md5": "0.7.3",
+    "jszip": "^3.10.1",
+    "mongodb": "^4.13.0",
+    "mp3-duration": "^1.1.0",
+    "node-lame": "^1.3.2",
+    "node-static": "^0.7.11",
+    "node-zip": "github:kyriosli/node-zip",
+    "nodemon": "^2.0.20",
+    "tempfile": "^4.0.0",
+    "xmldoc": "^1.2.0"
+  },
+  "description": "This is an API wrapper for GoAnimate's Legacy Video Maker, which had been retired on *19th December 2019, 03:10 UTC*.\tUnlike other services that attempt to sole the same problem, this project allows the LVM to access data peristence and is very portable.  Please keep in mind that not all features designed to run on the original API work properly. ## How to Use To access this service, install [Node.JS](https://nodejs.org/en/) then clone/download this project.\tOnce done, unzip the folder, copy the path, and execute the following commands in your command prompt (where `{PATH}` is the folder path you copied): ```console cd \"{PATH}\\GoAnimate-Wrapper-master\" npm install npm start ``` **When done, go to your web browser and navigate to `localhost`.**",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GoAnimate-Wrapper/GoAnimate-Wrapper.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GoAnimate-Wrapper/GoAnimate-Wrapper/issues"
+  },
+  "homepage": "https://github.com/GoAnimate-Wrapper/GoAnimate-Wrapper#readme"
+}

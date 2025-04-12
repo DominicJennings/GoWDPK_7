@@ -1,0 +1,134 @@
+{
+	"assets": [
+		{
+			"duration": 9143,
+			"title": "[Francisco] hola amigo, im pocoyo, Hbo más porque necesitaba ir al baño, y luego culparlo a él siendo sensible, Bien, adiós\n",
+			"share": {
+				"type": "none"
+			},
+			"ext": "mp3",
+			"type": "sound",
+			"subtype": "tts",
+			"downloadtype": "progressive",
+			"published": 0,
+			"tags": "",
+			"id": "a-60.mp3",
+			"file": "a-60.mp3",
+			"enc_asset_id": "a-60"
+		},
+		{
+			"duration": 8986,
+			"title": "[Francisco] hola amigo, im pocoyo, Hbo más porque necesitaba ir al baño, y luego culparlo a él siendo sensible, ok, adiós\n",
+			"share": {
+				"type": "none"
+			},
+			"ext": "mp3",
+			"type": "sound",
+			"subtype": "tts",
+			"downloadtype": "progressive",
+			"published": 0,
+			"tags": "",
+			"id": "a-59.mp3",
+			"file": "a-59.mp3",
+			"enc_asset_id": "a-59"
+		},
+		{
+			"duration": 10606,
+			"title": "[Alberto] hola amigo, im pocoyo, Hbo más porque necesitaba ir al baño, y luego culparlo a él siendo sensible, ok, adiós\n",
+			"share": {
+				"type": "none"
+			},
+			"ext": "mp3",
+			"type": "sound",
+			"subtype": "tts",
+			"downloadtype": "progressive",
+			"published": 0,
+			"tags": "",
+			"id": "a-58.mp3",
+			"file": "a-58.mp3",
+			"enc_asset_id": "a-58"
+		},
+		{
+			"title": "kisspng-television-animation-clip-art-pocoyo-5ac1aca39b32d8.6381813315226420836357.png",
+			"type": "prop",
+			"subtype": "0",
+			"ext": "png",
+			"share": {
+				"type": "none"
+			},
+			"published": 0,
+			"tags": "",
+			"id": "a-2.png",
+			"file": "a-2.png",
+			"enc_asset_id": "a-2"
+		},
+		{
+			"title": "HBO Plus (2023).png",
+			"type": "bg",
+			"subtype": "0",
+			"ext": "png",
+			"share": {
+				"type": "none"
+			},
+			"published": 0,
+			"tags": "",
+			"id": "a-1.png",
+			"file": "a-1.png",
+			"enc_asset_id": "a-1"
+		},
+		{
+			"title": "pngfind.com-barrel-png-807202.png",
+			"type": "prop",
+			"subtype": "0",
+			"ext": "png",
+			"share": {
+				"type": "none"
+			},
+			"published": 0,
+			"tags": "",
+			"id": "a-0.png",
+			"file": "a-0.png",
+			"enc_asset_id": "a-0"
+		},
+		{
+			"title": "Ephoto360.com_164f478bb42d86.jpg",
+			"type": "bg",
+			"subtype": "0",
+			"ext": "jpg",
+			"share": {
+				"type": "none"
+			},
+			"published": 0,
+			"tags": "",
+			"id": "a-0.jpg",
+			"file": "a-0.jpg",
+			"enc_asset_id": "a-0"
+		}
+	],
+	"movies": [
+		{
+			"movieOwnerId": "Nn49EpfnAgYJxoTCxdI9TVteMXG3",
+			"movieOwner": "stickmannextgen man",
+			"date": "2023-09-03T20:09:39.142Z",
+			"durationString": "00:09",
+			"duration": 9.1,
+			"title": "hbo más cerrado sobre",
+			"desc": "hbo más cerrado sobre suscribirse bien adiós",
+			"tags": "pocoyoreseña",
+			"id": "m-45",
+			"themeId": "ugc",
+			"public": 0,
+			"private": 0,
+			"type": "movie",
+			"subtype": 0,
+			"enc_asset_id": "m-45",
+			"file": "m-45.xml"
+		}
+	],
+	"settings": {
+		"wixwatermark": "on",
+		"chars": "off",
+		"darkmode": "on",
+		"oneyearbacklvm": "on"
+	}
+}
